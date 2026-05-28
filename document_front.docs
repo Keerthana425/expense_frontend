@@ -1,0 +1,206 @@
+# Expense Tracker Project Documentation
+
+# Table of Contents
+
+1. Frontend Documentation
+2. Backend Documentation
+
+---
+
+# FRONTEND DOCUMENTATION
+
+## Project Name
+
+Expense Tracker Frontend
+
+---
+
+## Project Overview
+
+The Expense Tracker Frontend is developed using Streamlit. It provides a user-friendly interface for managing expenses and interacting with the FastAPI backend.
+
+Users can:
+
+* Add expenses
+* View expenses
+* Update expenses
+* Delete expenses
+* Analyze expense summaries
+
+---
+
+# Frontend Tech Stack
+
+* Python
+* Streamlit
+* Pandas
+* Requests
+
+---
+
+# Frontend Features
+
+## Add Expense
+
+Users can add:
+
+* Title
+* Amount
+* Category
+* Payment Method
+* Expense Date
+* Description
+
+## View Expenses
+
+Displays all expenses in table format.
+
+## Update Expense
+
+Users can update existing expense details.
+
+## Delete Expense
+
+Users can remove expenses using Expense ID.
+
+## Expense Summary
+
+Displays category-wise expense analysis using charts.
+
+---
+
+# Frontend Project Structure
+
+```bash
+frontend/
+│
+├── ft.py
+├── requirements.txt
+└── .streamlit/
+    └── secrets.toml
+```
+
+---
+
+# Frontend Installation
+
+## Step 1: Clone Repository
+
+```bash
+git clone <repository_url>
+```
+
+---
+
+## Step 2: Navigate to Frontend Folder
+
+```bash
+cd frontend
+```
+
+---
+
+## Step 3: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Frontend requirements.txt
+
+```txt
+streamlit
+requests
+pandas
+```
+
+---
+
+# Configure Backend URL
+
+Create folder:
+
+```bash
+.streamlit
+```
+
+Create file:
+
+```bash
+.streamlit/secrets.toml
+```
+
+Add:
+
+```toml
+be_server_url = "http://127.0.0.1:8000"
+```
+
+For deployed backend:
+
+```toml
+be_server_url = "https://your-backend-url.onrender.com"
+```
+
+---
+
+# Run Frontend Locally
+
+```bash
+streamlit run ft.py
+```
+
+Frontend URL:
+
+```bash
+http://localhost:8501
+```
+
+---
+
+# Frontend Deployment
+
+## Deploy on Streamlit Cloud
+
+### Deployment Steps
+
+1. Push frontend code to GitHub
+2. Open Streamlit Cloud
+3. Connect GitHub repository
+4. Select frontend/ft.py
+5. Add secrets:
+
+```toml
+be_server_url = "https://your-backend-url.onrender.com"
+```
+
+6. Deploy application
+
+---
+
+# Frontend Workflow
+
+```text
+User → Streamlit Frontend → FastAPI Backend → MySQL Database
+```
+
+---
+
+# Frontend Future Enhancements
+
+* User Authentication
+* Dark Mode
+* Expense Filters
+* Monthly Reports
+* Download Reports
+* AI Expense Analysis
+
+---
+
+# Author
+
+Keerthana Reddy
+
+Python Developer | Full Stack Developer
