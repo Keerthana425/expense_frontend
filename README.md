@@ -61,8 +61,7 @@ frontend/
 │
 ├── ft.py
 ├── requirements.txt
-└── .streamlit/
-    └── secrets.toml
+
 ```
 
 ---
